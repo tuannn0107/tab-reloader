@@ -1,0 +1,51 @@
+{
+  "name": "Tab Reloader (page auto refresh)",
+  "short_name": "itreloader",
+  "description": "An easy-to-use tab reloader with custom reloading time settings for individual tabs",
+  "author": "James Fray",
+  "version": "0.2.5",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "contextMenus",
+    "*://www.google.com/*",
+    "http://*/",
+    "https://*/",
+    "<all_urls>"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "data/icons/disabled/16.png",
+      "18": "data/icons/disabled/18.png",
+      "19": "data/icons/disabled/19.png",
+      "32": "data/icons/disabled/32.png",
+      "36": "data/icons/disabled/36.png",
+      "38": "data/icons/disabled/38.png"
+    },
+    "default_popup": "data/popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "/lib/chrome/chrome.js",
+      "/lib/common.js"
+    ]
+  },
+  "homepage_url": "https://chuyenthienha.com",
+  "icons": {
+    "16": "data/icons/16.png",
+    "48": "data/icons/48.png",
+    "128": "data/icons/128.png"
+  },
+  "options_ui": {
+    "page": "data/options/index.html",
+    "chrome_style": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "jid0-sfjshdlfkjsldkfjsdkjflksdjfl@example22.com",
+      "strict_min_version": "52.0"
+    }
+  }
+}
