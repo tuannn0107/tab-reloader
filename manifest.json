@@ -10,6 +10,7 @@
     "tabs",
     "webNavigation",
     "contextMenus",
+    "browsingData",
     "*://www.google.com/*",
     "http://*/",
     "https://*/",
